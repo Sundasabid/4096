@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6ae4565-1b66-4055-a0ef-23770a2c8ee3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/GameBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameBoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/gameboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/gameboard.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="f6ae4565-1b66-4055-a0ef-23770a2c8ee3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765836457739</updated>
-      <workItem from="1765836459195" duration="3127000" />
+      <workItem from="1765836459195" duration="3535000" />
     </task>
     <servers />
   </component>
