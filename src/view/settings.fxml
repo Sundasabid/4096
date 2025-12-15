@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/19"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="controllers.SettingsController"
+           alignment="CENTER"
+           style="-fx-background-color: rgba(0, 0, 0, 0.85);">
+
+    <ImageView fitHeight="800" fitWidth="585" pickOnBounds="true" preserveRatio="false" opacity="0.3">
+        <image>
+            <Image url="@../resources/images/newbackground.jpg" />
+        </image>
+    </ImageView>
+
+    <VBox alignment="CENTER"
+          spacing="15"
+          maxWidth="420" maxHeight="500"
+          prefWidth="420" prefHeight="500"
+          style="-fx-background-color: rgba(20, 10, 40, 0.95);
+                 -fx-border-color: linear-gradient(to bottom, #4ECDC4, #FF6B9D);
+                 -fx-border-width: 3;
+                 -fx-background-radius: 25;
+                 -fx-border-radius: 25;
+                 -fx-effect: dropshadow(gaussian, rgba(78, 205, 196, 0.4), 20, 0, 0, 0);">
+
+        <HBox alignment="TOP_RIGHT">
+            <padding>
+                <Insets top="12" right="12"/>
+            </padding>
+            <Button text="✕" onAction="#handleCloseButton"
+                    style="-fx-background-color: rgba(255, 255, 255, 0.1);
+                           -fx-text-fill: white;
+                           -fx-font-size: 20;
+                           -fx-font-weight: bold;
+                           -fx-cursor: hand;
+                           -fx-background-radius: 12;
+                           -fx-min-width: 35;
+                           -fx-min-height: 35;"/>
+        </HBox>
+
+        <VBox alignment="CENTER">
+            <padding>
+                <Insets top="-20" bottom="5"/>
+            </padding>
+            <Label text="SETTINGS"
+                   style="-fx-font-size: 38;
+                          -fx-font-weight: 900;
+                          -fx-text-fill: white;
+                          -fx-effect: dropshadow(gaussian, rgba(78, 205, 196, 0.6), 10, 0, 0, 0);"/>
+        </VBox>
+
+        <VBox alignment="CENTER" spacing="12">
+            <padding>
+                <Insets left="35" right="35"/>
+            </padding>
+
+            <HBox alignment="CENTER_LEFT" spacing="15" prefWidth="350"
+                  style="-fx-background-color: rgba(255, 255, 255, 0.08);
+                         -fx-background-radius: 12;
+                         -fx-padding: 12 18;">
+                <Label text="Vibration"
+                       style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;"/>
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <ToggleButton fx:id="vibrationToggle"
+                              prefWidth="65" prefHeight="34"
+                              selected="true"
+                              style="-fx-background-color: transparent; -fx-cursor: hand;">
+                    <graphic>
+                        <StackPane prefWidth="65" prefHeight="34">
+                            <Rectangle width="65" height="34"
+                                       arcWidth="34" arcHeight="34"
+                                       style="-fx-fill: linear-gradient(to right, #4ECDC4, #44A08D);"/>
+                            <Circle radius="13"
+                                    fill="white"
+                                    translateX="13">
+                                <effect>
+                                    <DropShadow blurType="GAUSSIAN"
+                                                color="rgba(0,0,0,0.3)"
+                                                radius="3"
+                                                offsetY="2"/>
+                                </effect>
+                            </Circle>
+                        </StackPane>
+                    </graphic>
+                </ToggleButton>
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="15" prefWidth="350"
+                  style="-fx-background-color: rgba(255, 255, 255, 0.08);
+                         -fx-background-radius: 12;
+                         -fx-padding: 12 18;">
+                <Label text="Sound Effects"
+                       style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: white;"/>
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <ToggleButton fx:id="soundToggle"
+                              prefWidth="65" prefHeight="34"
+                              selected="true"
+                              style="-fx-background-color: transparent; -fx-cursor: hand;">
+                    <graphic>
+                        <StackPane prefWidth="65" prefHeight="34">
+                            <Rectangle width="65" height="34"
+                                       arcWidth="34" arcHeight="34"
+                                       style="-fx-fill: linear-gradient(to right, #4ECDC4, #44A08D);"/>
+                            <Circle radius="13"
+                                    fill="white"
+                                    translateX="13">
+                                <effect>
+                                    <DropShadow blurType="GAUSSIAN"
+                                                color="rgba(0,0,0,0.3)"
+                                                radius="3"
+                                                offsetY="2"/>
+                                </effect>
+                            </Circle>
+                        </StackPane>
+                    </graphic>
+                </ToggleButton>
+            </HBox>
+
+            <Separator prefWidth="350"
+                       style="-fx-background-color: rgba(255, 255, 255, 0.2);
+                              -fx-padding: 3 0;"/>
+
+            <Button fx:id="resetGameButton"
+                    onAction="#handleResetButton"
+                    prefWidth="350" prefHeight="55"
+                    style="-fx-background-color: linear-gradient(to right, rgba(78, 205, 196, 0.3), rgba(255, 107, 157, 0.3));
+               -fx-border-color: linear-gradient(to right, #4ECDC4, #FF6B9D);
+               -fx-border-width: 2;
+               -fx-border-radius: 12;
+               -fx-background-radius: 12;
+               -fx-text-fill: white;
+               -fx-font-size: 18;
+               -fx-font-weight: bold;
+               -fx-cursor: hand;">
+                <graphic>
+                    <HBox alignment="CENTER" spacing="10">
+                        <Label text="↻" style="-fx-font-size: 24; -fx-text-fill: white;"/>
+                        <Label text="Reset Game"
+                               style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: white;"/>
+                    </HBox>
+                </graphic>
+            </Button>
+
+            <Button fx:id="howToPlayButton"
+                    text="How To Play"
+                    onAction="#handleHowToPlay"
+                    prefWidth="350" prefHeight="55"
+                    style="-fx-background-color: linear-gradient(to right, rgba(78, 205, 196, 0.3), rgba(255, 107, 157, 0.3));
+                           -fx-border-color: linear-gradient(to right, #4ECDC4, #FF6B9D);
+                           -fx-border-width: 2;
+                           -fx-border-radius: 12;
+                           -fx-background-radius: 12;
+                           -fx-text-fill: white;
+                           -fx-font-size: 18;
+                           -fx-font-weight: bold;
+                           -fx-cursor: hand;"/>
+        </VBox>
+
+        <padding>
+            <Insets bottom="20"/>
+        </padding>
+
+    </VBox>
+
+</StackPane>

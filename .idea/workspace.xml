@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6ae4565-1b66-4055-a0ef-23770a2c8ee3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/AppContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/AppContextAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Navigator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/HowToPlayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/ResetDialogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/SoundManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/images/2f3eb0fd-0d4a-4e42-b9e7-3a091e267112_removalai_preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/images/47b32dcc-e6d2-4c10-896b-7eba72132749_removalai_preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/images/8e462f91-f905-46eb-86f5-016bc080995e_removalai_preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/style/styles2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uicontrols1.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="36tqwq4bJesKnUenphVOw9bii14" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/UNIVERSITY/SUBJECTS/OOP/Lab/Javafxprojects/tosundastokillus/NEWONEINTEGRATEANIMATIONS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="NEWONEINTEGRATEANIMATIONS" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;D:\UNIVERSITY\SUBJECTS\OOP\Lab\openjfx-25.0.1_windows-x64_bin-sdk\javafx-sdk-25.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.media" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6ae4565-1b66-4055-a0ef-23770a2c8ee3" name="Changes" comment="" />
+      <created>1765836457739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765836457739</updated>
+      <workItem from="1765836459195" duration="1050000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
