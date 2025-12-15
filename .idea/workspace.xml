@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6ae4565-1b66-4055-a0ef-23770a2c8ee3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/AppContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/AppContextAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Navigator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/HowToPlayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/ResetDialogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/SoundManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/images/2f3eb0fd-0d4a-4e42-b9e7-3a091e267112_removalai_preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/images/47b32dcc-e6d2-4c10-896b-7eba72132749_removalai_preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/images/8e462f91-f905-46eb-86f5-016bc080995e_removalai_preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/style/styles2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uicontrols1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/GameBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/GameBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/gameboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/gameboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +31,7 @@
     "Application.Unnamed.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -89,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765836457739</updated>
-      <workItem from="1765836459195" duration="1050000" />
+      <workItem from="1765836459195" duration="3127000" />
     </task>
     <servers />
   </component>

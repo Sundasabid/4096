@@ -82,8 +82,8 @@
             </Button>
         </HBox>
 
-        <Pane fx:id="overlayPane" mouseTransparent="true"/>
         <GridPane fx:id="gameGrid" alignment="CENTER" hgap="5" vgap="5">
+            <Pane fx:id="overlayPane" mouseTransparent="true"/>
 
             <columnConstraints>
                 <ColumnConstraints maxWidth="54" minWidth="54" prefWidth="54" />

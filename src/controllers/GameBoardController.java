@@ -10,12 +10,13 @@ import javafx.animation.SequentialTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.DialogPane;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -31,6 +32,13 @@ import javafx.util.Duration;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+import javafx.scene.layout.VBox;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Modality;
+import javafx.stage.StageStyle;
 
 /**
  * Game board controller with 2248-like animations:
@@ -142,14 +150,8 @@ public class GameBoardController implements AppContextAware {
 
         if (success) {
             renderUI();
-            // optional sound
-            // SoundManager.powerupSuccess();
         } else {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Undo Not Available");
-            alert.setHeaderText(null);
-            alert.setContentText("No undo available or not enough diamonds.");
-            alert.showAndWait();
+            showStyledDialog("Undo Not Available", "No undo available or not enough diamonds.");
         }
     }
 
@@ -161,18 +163,14 @@ public class GameBoardController implements AppContextAware {
         }
 
         if (!shuffleTwoPowerUp.canActivate()) {
-            showNotEnoughDiamondsDialog();
+            showStyledDialog("Not Enough Diamonds", "You need more diamonds to use Shuffle Two.");
             return;
         }
 
         inputMode = InputMode.SHUFFLE_TWO;
         shuffleTwoSelected.clear();
 
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Shuffle 2");
-        alert.setHeaderText(null);
-        alert.setContentText("Click TWO tiles to swap them.");
-        alert.show();
+        showStyledDialog("Shuffle Two", "Click TWO tiles to swap them.");
     }
 
     @FXML
@@ -186,19 +184,80 @@ public class GameBoardController implements AppContextAware {
             repository.captureSnapshot();
             renderUI();
         } else {
-            showNotEnoughDiamondsDialog();
+            showStyledDialog("Not Enough Diamonds", "You need more diamonds to use Shuffle All.");
         }
     }
 
-    private void showNotEnoughDiamondsDialog() {
+    private void showStyledDialog(String title, String message) {
         SoundManager.error();
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Not enough diamonds");
-        alert.setHeaderText(null);
-        alert.setContentText("You don’t have enough diamonds to use this power-up.");
-        alert.showAndWait();
-    }
 
+        // Create custom dialog stage
+        Stage dialogStage = new Stage();
+        dialogStage.initModality(Modality.APPLICATION_MODAL);
+        dialogStage.initStyle(StageStyle.TRANSPARENT);
+        dialogStage.initOwner(gameGrid.getScene().getWindow());
+
+        // Create content
+        VBox content = new VBox(18);
+        content.setAlignment(Pos.CENTER);
+        content.setPadding(new Insets(25, 30, 25, 30));
+        content.setMaxWidth(260);
+        content.setMaxHeight(180);
+        content.setStyle(
+                "-fx-background-color: linear-gradient(to bottom, rgba(25, 15, 45, 0.98), rgba(15, 8, 30, 0.98));" +
+                        "-fx-border-color: linear-gradient(to right, #4ECDC4, #FF6B9D);" +
+                        "-fx-border-width: 3;" +
+                        "-fx-background-radius: 20;" +
+                        "-fx-border-radius: 20;" +
+                        "-fx-effect: dropshadow(gaussian, rgba(78, 205, 196, 0.4), 25, 0, 0, 0);"
+        );
+
+        // Message label
+        Label messageLabel = new Label(message);
+        messageLabel.setStyle(
+                "-fx-text-fill: white;" +
+                        "-fx-font-size: 15px;" +
+                        "-fx-font-weight: normal;" +
+                        "-fx-text-alignment: center;" +
+                        "-fx-wrap-text: true;"
+        );
+        messageLabel.setWrapText(true);
+        messageLabel.setMaxWidth(200);
+
+        // OK button
+        Button okButton = new Button("OK");
+        okButton.setPrefWidth(160);
+        okButton.setPrefHeight(40);
+        okButton.setStyle(
+                "-fx-background-color: linear-gradient(to right, #4ECDC4, #44A08D);" +
+                        "-fx-text-fill: white;" +
+                        "-fx-font-size: 16px;" +
+                        "-fx-font-weight: bold;" +
+                        "-fx-background-radius: 12;" +
+                        "-fx-cursor: hand;" +
+                        "-fx-effect: dropshadow(gaussian, rgba(78, 205, 196, 0.4), 10, 0, 0, 0);"
+        );
+        okButton.setOnAction(e -> dialogStage.close());
+
+        content.getChildren().addAll(messageLabel, okButton);
+
+        // NO outer dark background - direct content only
+        StackPane root = new StackPane(content);
+        root.setStyle("-fx-background-color: transparent;");
+        root.setAlignment(Pos.CENTER);
+
+        Scene scene = new Scene(root);
+        scene.setFill(javafx.scene.paint.Color.TRANSPARENT);
+
+        dialogStage.setScene(scene);
+        dialogStage.sizeToScene();
+
+        Stage parentStage = (Stage) gameGrid.getScene().getWindow();
+        dialogStage.setX(parentStage.getX() + (parentStage.getWidth() - 260) / 2);
+        dialogStage.setY(parentStage.getY() + (parentStage.getHeight() - 180) / 2);
+
+        dialogStage.showAndWait();
+    }
     // -------------------------
     // Rendering + Input
     // -------------------------
@@ -505,11 +564,7 @@ public class GameBoardController implements AppContextAware {
     }
 
     private void showGameOverDialog() {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Game Over");
-        alert.setHeaderText(null);
-        alert.setContentText("No more moves left!");
-        alert.showAndWait();
+        showStyledDialog("Game Over", "No more moves left!");
     }
 
     // -------------------------
