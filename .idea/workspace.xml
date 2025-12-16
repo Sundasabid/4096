@@ -4,11 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6ae4565-1b66-4055-a0ef-23770a2c8ee3" name="Changes" comment="" />
+    <list default="true" id="f6ae4565-1b66-4055-a0ef-23770a2c8ee3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/domain/model/GameConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/model/MergeLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/model/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/service/GameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/service/GameServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infrastructure/persistence/GameRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/service/DialogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/service/NavigationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/view/DragLineDrawer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/view/InputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/view/MergeAnimator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/view/TileRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presentation/viewmodel/GameBoardViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/GameContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/GameContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/GameEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/GameEnd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/MergeLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/MergeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/MergeValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/PlayerSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/PlayerSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/PowerUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/PowerUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Reset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Reset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ShuffleAllPowerUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/ShuffleAllPowerUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ShuffleTwoPowerUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/ShuffleTwoPowerUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/SpawnLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/SpawnLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/UndoPowerUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/UndoPowerUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/AppContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/GameBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/controllers/GameBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/HowToPlayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/controllers/HowToPlayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/controllers/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/PauseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/controllers/PauseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ResetDialogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/controllers/ResetDialogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/controllers/SettingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/controllers/SoundManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/style/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/style/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/style/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/style/styles2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/gameboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/view/gameboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/howtoplay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/view/howtoplay.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/mainmenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/view/mainmenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/pause.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/view/pause.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/resetbox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/view/resetbox.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/settings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/view/settings.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765836457739</updated>
-      <workItem from="1765836459195" duration="3535000" />
+      <workItem from="1765836459195" duration="8800000" />
     </task>
     <servers />
   </component>

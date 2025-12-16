@@ -1,6 +1,6 @@
 package app;
 
-import Model.*;
+import domain.model.*;
 
 public final class AppContext {
     public final SpawnLogic spawnLogic;

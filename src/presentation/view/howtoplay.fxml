@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/19"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="presentation.controllers.HowToPlayController"
+           alignment="CENTER"
+           style="-fx-background-color: rgba(0, 0, 0, 0.6);">
+
+    <VBox alignment="TOP_CENTER"
+          spacing="12"
+          maxWidth="360" maxHeight="420"
+          prefWidth="360" prefHeight="420"
+          style="-fx-background-color: rgba(20, 15, 35, 0.98);
+                 -fx-border-color: #4ECDC4;
+                 -fx-border-width: 2;
+                 -fx-background-radius: 20;
+                 -fx-border-radius: 20;
+                 -fx-effect: dropshadow(gaussian, rgba(78, 205, 196, 0.3), 25, 0, 0, 0);">
+
+        <padding>
+            <Insets top="20" bottom="20" left="25" right="25"/>
+        </padding>
+
+        <HBox alignment="CENTER">
+            <Label text="HOW TO PLAY"
+                   style="-fx-font-size: 22;
+                          -fx-font-weight: 900;
+                          -fx-text-fill: white;
+                          -fx-effect: dropshadow(gaussian, rgba(78, 205, 196, 0.4), 8, 0, 0, 0);"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="✕"
+                    fx:id="closeButton"
+                    onAction="#handleClose"
+                    style="-fx-background-color: rgba(255, 255, 255, 0.1);
+                           -fx-text-fill: white;
+                           -fx-font-size: 18;
+                           -fx-font-weight: bold;
+                           -fx-cursor: hand;
+                           -fx-background-radius: 10;
+                           -fx-min-width: 32;
+                           -fx-min-height: 32;"/>
+        </HBox>
+
+        <Separator prefWidth="310"
+                   style="-fx-background-color: rgba(78, 205, 196, 0.3);"/>
+
+        <VBox spacing="14" alignment="TOP_LEFT">
+            <padding>
+                <Insets top="5"/>
+            </padding>
+
+            <!-- Step 1 -->
+            <HBox spacing="12" alignment="TOP_LEFT">
+                <StackPane minWidth="28" maxWidth="28" minHeight="28" maxHeight="28"
+                           style="-fx-background-color: rgba(78, 205, 196, 0.2);
+                                 -fx-background-radius: 14;
+                                 -fx-border-color: #4ECDC4;
+                                 -fx-border-radius: 14;
+                                 -fx-border-width: 1.5;">
+                    <Label text="1"
+                           style="-fx-font-size: 16;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: #4ECDC4;"/>
+                </StackPane>
+                <VBox spacing="3" HBox.hgrow="ALWAYS">
+                    <Label text="Match the tiles"
+                           style="-fx-font-size: 15;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: white;"/>
+                    <Label text="Swipe to move tiles in any direction"
+                           wrapText="true"
+                           maxWidth="260"
+                           style="-fx-font-size: 12;
+                                  -fx-text-fill: rgba(255, 255, 255, 0.75);"/>
+                </VBox>
+            </HBox>
+
+            <!-- Step 2 -->
+            <HBox spacing="12" alignment="TOP_LEFT">
+                <StackPane minWidth="28" maxWidth="28" minHeight="28" maxHeight="28"
+                           style="-fx-background-color: rgba(78, 205, 196, 0.2);
+                                 -fx-background-radius: 14;
+                                 -fx-border-color: #4ECDC4;
+                                 -fx-border-radius: 14;
+                                 -fx-border-width: 1.5;">
+                    <Label text="2"
+                           style="-fx-font-size: 16;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: #4ECDC4;"/>
+                </StackPane>
+                <VBox spacing="3" HBox.hgrow="ALWAYS">
+                    <Label text="Combine numbers"
+                           style="-fx-font-size: 15;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: white;"/>
+                    <Label text="When two tiles with same number touch, they merge into one"
+                           wrapText="true"
+                           maxWidth="260"
+                           style="-fx-font-size: 12;
+                                  -fx-text-fill: rgba(255, 255, 255, 0.75);"/>
+                </VBox>
+            </HBox>
+
+            <!-- Step 3 -->
+            <HBox spacing="12" alignment="TOP_LEFT">
+                <StackPane minWidth="28" maxWidth="28" minHeight="28" maxHeight="28"
+                           style="-fx-background-color: rgba(78, 205, 196, 0.2);
+                                 -fx-background-radius: 14;
+                                 -fx-border-color: #4ECDC4;
+                                 -fx-border-radius: 14;
+                                 -fx-border-width: 1.5;">
+                    <Label text="3"
+                           style="-fx-font-size: 16;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: #4ECDC4;"/>
+                </StackPane>
+                <VBox spacing="3" HBox.hgrow="ALWAYS">
+                    <Label text="Reach 2048"
+                           style="-fx-font-size: 15;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: white;"/>
+                    <Label text="Keep combining tiles to reach the 2048 tile and win!"
+                           wrapText="true"
+                           maxWidth="260"
+                           style="-fx-font-size: 12;
+                                  -fx-text-fill: rgba(255, 255, 255, 0.75);"/>
+                </VBox>
+            </HBox>
+
+            <!-- Warning -->
+            <HBox spacing="12" alignment="TOP_LEFT">
+                <StackPane minWidth="28" maxWidth="28" minHeight="28" maxHeight="28"
+                           style="-fx-background-color: rgba(255, 107, 157, 0.2);
+                                 -fx-background-radius: 14;
+                                 -fx-border-color: #FF6B9D;
+                                 -fx-border-radius: 14;
+                                 -fx-border-width: 1.5;">
+                    <Label text="!"
+                           style="-fx-font-size: 18;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: #FF6B9D;"/>
+                </StackPane>
+                <VBox spacing="3" HBox.hgrow="ALWAYS">
+                    <Label text="Don't run out of moves"
+                           style="-fx-font-size: 15;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: white;"/>
+                    <Label text="Game ends when board is full with no possible moves"
+                           wrapText="true"
+                           maxWidth="260"
+                           style="-fx-font-size: 12;
+                                  -fx-text-fill: rgba(255, 255, 255, 0.75);"/>
+                </VBox>
+            </HBox>
+        </VBox>
+
+        <Region VBox.vgrow="ALWAYS"/>
+
+        <Button text="Got it!"
+                prefWidth="310" prefHeight="45"
+                onAction="#handleClose"
+                style="-fx-background-color: linear-gradient(to right, #4ECDC4, #44A08D);
+                       -fx-border-color: transparent;
+                       -fx-background-radius: 12;
+                       -fx-text-fill: white;
+                       -fx-font-size: 17;
+                       -fx-font-weight: bold;
+                       -fx-cursor: hand;
+                       -fx-effect: dropshadow(gaussian, rgba(78, 205, 196, 0.4), 10, 0, 0, 0);"/>
+
+    </VBox>
+
+</StackPane>

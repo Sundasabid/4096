@@ -18,7 +18,7 @@ public class Main extends Application {
         stage.setResizable(true);
 
         // Start screen:
-        nav.go("/view/mainmenu.fxml");
+        nav.go("/presentation/view/mainmenu.fxml");
     }
 
     public static void main(String[] args) {

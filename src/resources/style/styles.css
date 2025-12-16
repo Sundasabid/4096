@@ -1,17 +1,17 @@
 .root {
-    -fx-background-image: url('/RESOURCES/images/newbackground.jpg');
+    -fx-background-image: url('/presentation/resources/images/newbackground.jpg');
     -fx-background-repeat: repeat;
     -fx-background-size: auto;
 }
 
 .pattern-background {
-    -fx-background-image: url('/RESOURCES/images/newbackground.jpg');
+    -fx-background-image: url('/presentation/resources/images/newbackground.jpg');
     -fx-background-repeat: repeat;
     -fx-background-size: 200px 200px;
 }
 
 .cover-background {
-    -fx-background-image: url('/RESOURCES/images/newbackground.jpg');
+    -fx-background-image: url('/presentation/resources/images/newbackground.jpg');
     -fx-background-size: cover;
     -fx-background-position: center;
 }
